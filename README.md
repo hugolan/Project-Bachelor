@@ -2,7 +2,10 @@
 
 # EdgeFool
 This is a modified copy of the original repositery, I use it in the context of my bachelor project to have grasp on the concept of adversarial images generation:
-
+This code works as follows:
+   -First generate,
+   -Secondly, 
+   
 ### Image Smoothing 
 
 1. Go to Smoothing directory
@@ -47,6 +50,68 @@ Obtain results from adversarial Images
 
 # ColorFool
 
+## Description
+The code works in two steps: 
+1. Identify image regions using semantic segmentation model
+2. Generate adversarial images via perturbing color of semantic regions in the natural color range    
+
+### Semantic Segmentation 
+
+1. Go to Segmentation directory
+   ```
+   cd Segmentation
+   ```
+2. Download segmentation model (both encoder and decoder) from [here](https://drive.google.com/drive/folders/1FjZTweIsWWgxhXkzKHyIzEgBO5VTCe68) and locate in "models" directory.
+   
+
+3. Run the segmentation for all images within Dataset directory (requires GPU)
+   ```
+   bash script.sh
+   ```
+
+The semantic regions of four categories will be saved in the Segmentation/SegmentationResults/$Dataset/ directory as a smooth mask the same size of the image with the same name as their corresponding original images
+
+### Generate ColorFool Adversarial Images
+
+1. Go to Adversarial directory
+   ```
+   cd ../Adversarial
+   ```
+2. In the script.sh set 
+(i) the name of target models for attack, and (ii) the name of the dataset.
+The current implementation supports three classifiers (Resnet18, Resnet50 and Alexnet) trained with ImageNet.
+3. Run ColorFool for all images within the Dataset directory (works in both GPU and CPU)
+   ```
+   bash script.sh
+   ```
+
+### Outputs
+* Adversarial Images saved with the same name as the clean images in Adversarial/Results/ColorFoolImgs directory;
+* Metadata with the following structure: filename, number of trials, predicted class of the clean image with its probablity and predicted class of the adversarial image with its probablity in Adversarial/Results/Logs directory.
+
+Setup
+
+To be able to use this code you need to install conda
+
+## Outputs
+
+1. Download source code from GitHub
+   ```
+    git clone https://github.com/hugolan/Project-Bachelor.git 
+   ```
+2. Create [conda](https://docs.conda.io/en/latest/miniconda.html) virtual-environment
+   ```
+    conda create --name ColorFool python=3.5.6
+   ```
+3. Activate conda environment
+   ```
+    source activate ColorFool
+   ```
+4. Install requirements
+   ```
+    pip install -r requirements.txt
+   ```
+
 ## Authors
 EdgeFool:
 
@@ -55,6 +120,12 @@ EdgeFool:
 * [Andrea Cavallaro](mailto:a.cavallaro@qmul.ac.uk)
 
 ColorFool:
+
+* [Ali Shahin Shamsabadi](mailto:a.shahinshamsabadi@qmul.ac.uk)
+* [Ricardo Sanchez-Matilla](mailto:ricardo.sanchezmatilla@qmul.ac.uk)
+* [Andrea Cavallaro](mailto:a.cavallaro@qmul.ac.uk)
+
+
 
 
 
