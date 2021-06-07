@@ -2,9 +2,10 @@
 
 # EdgeFool
 This is a modified copy of the original repositery, I use it in the context of my bachelor project to have grasp on the concept of adversarial images generation:
-This code works as follows:
-   -First generate, the smoothed images
-   -Secondly, enhanced the details and add the imperceptible noise
+This code works as follows: 
+   
+   - First generate, the smoothed images 
+   - Secondly, enhanced the details and add the imperceptible noise
    
 ### Image Smoothing 
 
