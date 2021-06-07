@@ -62,13 +62,15 @@ ColorFool:
 
 
 
-
-
 ## References
 
 EdgeFool: https://arxiv.org/pdf/1910.12227.pdf
 
 ColorFool: https://arxiv.org/pdf/1911.10891.pdf
+
+Class Activation Mapping: https://github.com/zhoubolei/CAM
+
+Pytorch-cnn visualization: https://github.com/utkuozbulak/pytorch-cnn-visualizations
 
 ## License
 The content of this project itself is licensed under the [Creative Commons Non-Commercial (CC BY-NC)](https://creativecommons.org/licenses/by-nc/2.0/uk/legalcode).
