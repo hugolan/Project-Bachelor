@@ -47,10 +47,13 @@ Obtain results from adversarial Images
    ```
 
 ## Authors
+EdgeFool:
+
 * [Ali Shahin Shamsabadi](mailto:a.shahinshamsabadi@qmul.ac.uk)
 * [Changjae Oh](mailto:c.oh@qmul.ac.uk)
 * [Andrea Cavallaro](mailto:a.cavallaro@qmul.ac.uk)
 
+ColorFool:
 
 
 
@@ -62,15 +65,10 @@ Obtain results from adversarial Images
 
 
 ## References
-If you use our code, please cite the following paper:
 
-      @InProceedings{shamsabadi2020edgefool,
-        title = {EdgeFool: An Adversarial Image Enhancement Filter},
-        author = {Shamsabadi, Ali Shahin and Oh, Changjae and Cavallaro, Andrea},
-        booktitle = {Proceedings of the 45th IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP)},
-        year = {2020},
-        address = {Barcelona, Spain},
-        month = May
-      }
+EdgeFool: https://arxiv.org/pdf/1910.12227.pdf
+
+ColorFool: https://arxiv.org/pdf/1911.10891.pdf
+
 ## License
 The content of this project itself is licensed under the [Creative Commons Non-Commercial (CC BY-NC)](https://creativecommons.org/licenses/by-nc/2.0/uk/legalcode).
