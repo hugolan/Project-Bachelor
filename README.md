@@ -1,9 +1,7 @@
 # Project-Bachelor
 
 # EdgeFool
-This is a modified copy of the work below, I use it in the context of my bachelor project to have grasp on the concept of adversarial images generation \n:
-The official repository is [EDGEFOOL: AN ADVERSARIAL IMAGE ENHANCEMENT FILTER](https://arxiv.org/pdf/1910.12227.pdf)
-
+This is a modified copy of the original repositery, I use it in the context of my bachelor project to have grasp on the concept of adversarial images generation:
 
 ### Image Smoothing 
 
@@ -45,6 +43,9 @@ Obtain results from adversarial Images
    ```
    bash exec.sh
    ```
+### To get the missleading rate:
+
+# ColorFool
 
 ## Authors
 EdgeFool:
