@@ -1,0 +1,8 @@
+numpy
+torch
+torchvision
+opencv-python==4.2.0.32
+tqdm
+future
+scikit-image
+tensorboardX
