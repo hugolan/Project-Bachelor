@@ -7,8 +7,6 @@ The official repository is [EDGEFOOL: AN ADVERSARIAL IMAGE ENHANCEMENT FILTER](h
 
 ### Image Smoothing 
 
-Image smoothing is performed with the Python implementation of [Image Smoothing via L0 Gradient Minimization](http://www.cse.cuhk.edu.hk/~leojia/papers/L0smooth_Siggraph_Asia2011.pdf) provided by [Kevin Zhang](https://github.com/kjzhang/kzhang-cs205-l0-smoothing), as follows: 
-
 1. Go to Smoothing directory
    ```
    cd Smoothing
@@ -20,9 +18,6 @@ Image smoothing is performed with the Python implementation of [Image Smoothing 
 3. The l0 smoothed images will be saved in the SmoothImgs directory (within the 'root' directory) with the same name as their corresponding original images
 
 ### Generate the enhanced adversarial images
-
-A Fully Convolutional Neural Network (FCNN) is first trained end-to-end with a multi-task loss function which includes smoothing and adversarial losses. The architecture of the FCNN is instantiated from [Fast Image Processing with Fully-Convolutional Networks](https://arxiv.org/pdf/1709.00643.pdf) implemented in PyTorch by [Wu Huikai](https://github.com/wuhuikai/DeepGuidedFilter/tree/master/ImageProcessing/DeepGuidedFilteringNetwork). We enhance the image details of the L image channel only, after conversion to the Lab colour space without changing the colours of the image. In order to do this, we provided a differentiable PyTorch implementation of RGB-to-Lab and Lab-to-RGB. The enhanced adversarial images are then generated
-
 
 1. Go to Train directory
    ```
@@ -55,6 +50,15 @@ Obtain results from adversarial Images
 * [Ali Shahin Shamsabadi](mailto:a.shahinshamsabadi@qmul.ac.uk)
 * [Changjae Oh](mailto:c.oh@qmul.ac.uk)
 * [Andrea Cavallaro](mailto:a.cavallaro@qmul.ac.uk)
+
+
+
+
+
+
+
+
+
 
 
 ## References
