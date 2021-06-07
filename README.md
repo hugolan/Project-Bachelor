@@ -3,8 +3,8 @@
 # EdgeFool
 This is a modified copy of the original repositery, I use it in the context of my bachelor project to have grasp on the concept of adversarial images generation:
 This code works as follows:
-   -First generate,
-   -Secondly, 
+   -First generate, the smoothed images
+   -Secondly, enhanced the details and add the imperceptible noise
    
 ### Image Smoothing 
 
@@ -89,11 +89,10 @@ The current implementation supports three classifiers (Resnet18, Resnet50 and Al
 * Adversarial Images saved with the same name as the clean images in Adversarial/Results/ColorFoolImgs directory;
 * Metadata with the following structure: filename, number of trials, predicted class of the clean image with its probablity and predicted class of the adversarial image with its probablity in Adversarial/Results/Logs directory.
 
-Setup
 
-To be able to use this code you need to install conda
+## Setup
 
-## Outputs
+To be able to use this code you need to follow this instructions:
 
 1. Download source code from GitHub
    ```
@@ -101,16 +100,18 @@ To be able to use this code you need to install conda
    ```
 2. Create [conda](https://docs.conda.io/en/latest/miniconda.html) virtual-environment
    ```
-    conda create --name ColorFool python=3.5.6
+    conda create --name Environment python=3.5.6
+    (For edge use: conda create Environment --name python=2.7.15)
    ```
 3. Activate conda environment
    ```
-    source activate ColorFool
+    source activate Environment
    ```
-4. Install requirements
+4. Install requirements for EdgeFool and ColorFool
    ```
     pip install -r requirements.txt
    ```
+ N.B: First install the requirements before trying to use the visualization code, otherwise it may not work without conda.
 
 ## Authors
 EdgeFool:
