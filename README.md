@@ -116,6 +116,13 @@ To be able to use this code you need to follow this instructions:
  
 # CAM
 
+Use the following command to obtain the result from python: 
+   ```
+       python pytorch_CAM.py
+   ```
+
+Name cam_visualize_with_python the image you want to be analyzed. But it can be changed in the file at line 93 using OpenCV.
+
 # Pytorch-CNN
 
 
