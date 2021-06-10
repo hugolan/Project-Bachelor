@@ -47,7 +47,12 @@ Obtain results from adversarial Images
    ```
    bash exec.sh
    ```
-### To get the missleading rate:
+### To get the misleading rate:
+
+To get the misleading rate run the following command in the train folder of EdgeFool. The results are saved in train_results.txt.
+   ```
+   python test.py
+   ```
 
 # ColorFool
 
