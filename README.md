@@ -118,13 +118,24 @@ To be able to use this code you need to follow this instructions:
 
 Use the following command to obtain the result from python: 
    ```
-       python pytorch_CAM.py
+     python pytorch_CAM.py
    ```
 
 Name cam_visualize_with_python the image you want to be analyzed. But it can be changed in the file at line 93 using OpenCV.
 
 # Pytorch-CNN
 
+Here we were mostly interested in the Colored Guided Backpropagation and Gradient-weighted Class Activation Heatmap on Image visualizations.
+
+Use the following command to obtain the result of the colored guided backpropagation: 
+   ```
+     python guided_backprop.py
+   ```
+Use the following command to obtain the result of the gradient-weighted class activation heatmap on image: 
+   ```
+     python guided_gradcam.py
+   ```
+The images to be analyzed are set at line 233 in misc_functions.py. Along with the name of the image to be visualized join the label number of the ImageNet dataset. 
 
 ## Authors
 EdgeFool:
