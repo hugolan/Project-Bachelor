@@ -90,7 +90,7 @@ CAMs = returnCAM(features_blobs[0], weight_softmax, [idx[0]])
 
 # render the CAM and output
 print('output CAM.jpg for the top1 prediction: %s'%classes[idx[0]])
-img = cv2.imread('test.jpg')
+img = cv2.imread('cam_visualize_with_python.jpg')
 height, width, _ = img.shape
 heatmap = cv2.applyColorMap(cv2.resize(CAMs[0],(width, height)), cv2.COLORMAP_JET)
 result = heatmap * 0.3 + img * 0.5
