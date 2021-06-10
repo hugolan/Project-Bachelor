@@ -113,6 +113,11 @@ To be able to use this code you need to follow this instructions:
     pip install -r requirements.txt
    ```
  N.B: First install the requirements before trying to use the visualization code, otherwise it may not work without conda.
+ 
+# CAM
+
+# Pytorch-CNN
+
 
 ## Authors
 EdgeFool:
@@ -127,13 +132,13 @@ ColorFool:
 * [Ricardo Sanchez-Matilla](mailto:ricardo.sanchezmatilla@qmul.ac.uk)
 * [Andrea Cavallaro](mailto:a.cavallaro@qmul.ac.uk)
 
+CAM:
 
+* [Bolei Zhou] https://github.com/zhoubolei
 
+Pytorch-CNN:
 
-
-
-
-
+* [Utku Ozbulak] https://github.com/utkuozbulak
 
 
 ## References
