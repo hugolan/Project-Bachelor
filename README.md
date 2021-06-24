@@ -1,7 +1,7 @@
 # Project-Bachelor
 
 # EdgeFool
-This is a modified copy of the original repositery, I use it in the context of my bachelor project to have grasp on the concept of adversarial images generation:
+This is a modified copy of the original repositery, I used it in the context of my bachelor project to have grasp on the concept of adversarial images generation:
 This code works as follows: 
    
    - First generate, the smoothed images 
